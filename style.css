@@ -29,3 +29,118 @@
   --raio-padrao: 8px;
   --raio-campo: 6px;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--fonte-base);
+  background: var(--cor-fundo-radial);
+  color: var(--cor-texto);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.campo__dica-oculta {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espaco-md);
+  background: linear-gradient(90deg, #000000 0%, #1a1a1a 100%);
+}
+
+.topo__logo {
+  width: 40px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.topo__cadastro {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--cor-texto-terciario);
+}
+
+.topo__cadastro:hover {
+  color: var(--cor-texto);
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: var(--espaco-lg) var(--espaco-md);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+
+.login-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: var(--espaco-sm);
+}
+
+.login-subtitulo {
+  font-size: 0.95rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: var(--espaco-lg);
+}
+
+.cartao-login {
+  text-align: left;
+  margin-bottom: var(--espaco-lg);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-xs);
+}
+
+.campo label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.campo input {
+  background: var(--cor-input);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-campo);
+  padding: 15px var(--espaco-sm);
+  font-size: 1rem;
+  color: var(--cor-texto);
+  width: 100%;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: var(--cor-texto);
+}
