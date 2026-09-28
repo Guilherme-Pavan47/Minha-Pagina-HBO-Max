@@ -7,3 +7,110 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <header class="topo">
+    <a href="#" class="topo__logo-link" aria-label="Página inicial do HBO Max">
+      <img src="assets/ImagemHboMax.png" alt="HBO Max" class="topo__logo">
+    </a>
+    <a href="#" class="topo__cadastro">Cadastre-se agora</a>
+  </header>
+
+  <main class="conteudo">
+    <div class="login-container">
+
+      <h1 class="login-titulo">Entre</h1>
+      <p class="login-subtitulo">Digite seu endereço de e-mail ou núme    ro de celular para entrar.</p>
+
+      <section class="cartao-login" aria-label="Formulário de login">
+        <form class="form-login" action="" method="get">
+          <div class="campo">
+            <label for="identificador">Endereço de e-mail ou número de celular</label>
+            <input
+              type="text"
+              id="identificador"
+              name="identificador"
+              autocomplete="username"
+              required
+              aria-describedby="identificador-dica"
+            >
+            <span id="identificador-dica" class="campo__dica-oculta">
+              Digite o e-mail ou número de celular cadastrado na sua conta HBO Max.
+            </span>
+          </div>
+
+          <button type="submit" class="botao botao--primario">Continue</button>
+        </form>
+      </section>
+
+      <div class="cadastro-info">
+        <h2>Ainda não tem uma conta HBO Max?</h2>
+        <p>
+          Se você acessa a HBO Max por um provedor de TV, celular ou internet,
+          <a href="#">crie uma conta HBO Max</a>.
+        </p>
+      </div>
+
+      <p class="ajuda-link">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Precisa de ajuda para entrar?
+          <svg class="icone-externo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+            <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/>
+          </svg>
+        </a>
+      </p>
+
+    </div>
+  </main>
+
+  <a href="#" class="botao-chat" aria-label="Abrir chat de ajuda">
+    <img src="assets/imagemChat.png" alt="Chat de ajuda">
+  </a>
+
+  <footer class="rodape">
+    <div class="rodape__topo">
+      <ul class="rodape__social" aria-label="Redes sociais da HBO Max">
+        <li>
+          <a href="#" aria-label="YouTube">
+            <img src="assets/imagemYoutube.webp" alt="YouTube" class="icone-social-img">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="X (Twitter)">
+            <img src="assets/imagemX.webp" alt="X" class="icone-social-img">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-7h2.4l.4-3H14V9c0-.9.3-1.5 1.7-1.5H17V4.8C16.6 4.7 15.6 4.6 14.5 4.6c-2.3 0-3.9 1.4-3.9 4V11H8v3h2.6v7h3.4z" fill="currentColor"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3c.4 2 2 3.6 4 3.9v2.6c-1.4 0-2.8-.4-4-1.2v5.6a5 5 0 1 1-5-5c.3 0 .7 0 1 .1v2.7a2.3 2.3 0 1 0 1.6 2.2V3H14z" fill="currentColor"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <nav class="rodape__links" aria-label="Links legais">
+        <a href="#">Acessibilidade</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Gerir Biscoitos</a>
+        <a href="#">Informações de Anúncios</a>
+        <a href="#">Só quer HBO?</a>
+        <a href="#">Ajuda</a>
+      </nav>
+    </div>
+
+    <p class="rodape__copy">&copy; 2026 WarnerMedia Direct, LLC. Todos os direitos reservados.</p>
+
+  </footer>
+
+</body>
+</html>
