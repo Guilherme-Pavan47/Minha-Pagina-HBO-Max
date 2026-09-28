@@ -5,3 +5,27 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --cor-fundo: #000000;
+  --cor-fundo-radial: radial-gradient(circle at 50% 0%, #2b2b2b 0%, #111213 45%, #000000 100%);
+  --cor-cartao: #191e1f;
+  --cor-input: #171a1b;
+  --cor-borda: rgba(255, 255, 255, 0.25);
+  --cor-texto: #ffffff;
+  --cor-texto-secundario: #9a9a9e;
+  --cor-texto-terciario: #b0b0b0;
+  --cor-link: #71b8f2;
+  --cor-botao-bg: #dddddd;
+  --cor-botao-texto: #14171a;
+
+  --fonte-base: Arial, Helvetica, sans-serif;
+
+  --espaco-xs: 8px;
+  --espaco-sm: 12px;
+  --espaco-md: 20px;
+  --espaco-lg: 32px;
+
+  --raio-padrao: 8px;
+  --raio-campo: 6px;
+}
