@@ -299,3 +299,53 @@ a {
   margin-bottom: var(--espaco-xs);
 }
 
+@media (max-width: 767px) {
+  .botao-chat {
+    right: 16px;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .topo {
+    padding: var(--espaco-md) 40px;
+  }
+
+  .login-container {
+    max-width: 750px;
+    margin-top: var(--espaco-lg);
+  }
+
+  .login-titulo {
+    font-size: 2.75rem;
+  }
+
+  .cartao-login {
+    background: var(--cor-cartao);
+    border: none;
+    border-radius: var(--raio-padrao);
+    padding: 40px;
+  }
+
+  .form-login {
+    align-items: flex-start;
+  }
+
+  .campo {
+    width: 100%;
+  }
+
+  .botao {
+    width: auto;
+    padding: 16px 32px;
+  }
+
+  .rodape__topo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
